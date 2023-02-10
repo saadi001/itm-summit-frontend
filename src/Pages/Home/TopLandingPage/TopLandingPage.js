@@ -14,6 +14,7 @@ const TopLandingPage = () => {
                <Navbar></Navbar>
                <MiddleDetails></MiddleDetails>
                <CountdownTimer targetDate={dateTimeAfterThreeDays} />
+               <div className='opacity-0'>.</div>
           </div>
      );
 };
