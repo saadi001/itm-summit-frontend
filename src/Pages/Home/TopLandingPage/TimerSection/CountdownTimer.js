@@ -7,7 +7,7 @@ const CountdownTimer = ({ targetDate }) => {
   const [days, hours, minutes, seconds] = useCountdown(targetDate);
 
   if (days + hours + minutes + seconds <= 0) {
-    return <div>expired</div>;
+    return <div>0</div>;
   } else {
     return (
       <TimerSection
