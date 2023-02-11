@@ -4,7 +4,7 @@ import diu from '../../../Asset/image/DIU.png'
 
 const About = () => {
      return (
-          <div id='about' className='max-w-7xl xl:mx-auto lg:mx-28 md:mx-12 mx-5 py-14'>
+          <div id='about' className='mt-14'>
                <div className=''>
                     <img className='w-32' src={logo} alt="" />
                     <div className='font-semibold text-xl mt-4 mb-2'>About Information Technology & Management Summit 2023</div>
@@ -21,8 +21,8 @@ const About = () => {
                     </div>
                </div>
                <div className='mt-8'>
-                    <p className='font-semibold text-xl mb-2'>About Daffodil International University (DIU)</p>
-                    <img src={diu} alt="" />
+                    <p className='font-semibold text-xl mb-3'>About Daffodil International University (DIU)</p>
+                    <img className='w-full' src={diu} alt="" />
                     <div className='text-base mt-4 font-serif'>
                          <div>
                               Daffodil International University (DIU) is one of the top universities in Bangladesh according to many national and international rankings, including THE, QS and Greenmetric for its green outlook. Currently DIU is having 22,000 students under 5 different faculties and 25 departments. Around 400 international students from many different countries are currently studying here too. DIU established international collaborations with around 440 universities all over the world and members of leading international organizations like AUPF, IIE, IAU, IAUP, AUAP, ACU, ALA, ACD, Magna Charta, UNAI, APAIE, EURAS, ESRUC, EEUA, ATUNET, IEEE, ISTQB, ACE, NAFSA, AMDISA, EAIE, ATIFTAF, ITU, ACBSP, UNGC, UMAP, IFLA, WUACD, GUNI, SDSN, ASEF, AIESEC, ASECU, IETI, Future Team, SDG Helpdesk, EEUA etc.
