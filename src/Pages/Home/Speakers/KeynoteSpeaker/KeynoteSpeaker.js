@@ -11,7 +11,7 @@ const KeynoteSpeaker = () => {
                     </div>
                     <div className='p-3'>
                          <p className='text-lg md:text-2xl font-semibold'>Ayman sadiq</p>
-                         <p className='text-slate-600 text-sm mt-2 font-serif'>Founder & CEO, 10 Minute School <br />
+                         <p className='text-gray-500 text-sm mt-2 font-serif'>Founder & CEO, 10 Minute School <br />
                               Forbe's 30 Under 30 <br />
                               Queen's Young Leader <br />
                               Bestselling Author
@@ -20,9 +20,9 @@ const KeynoteSpeaker = () => {
                               Ayman Sadiq is a Bangladeshi education entrepreneur. He is the founder of Ten Minute School, an online educational institution. Ayman Sadiq has implemented this idea in the country where online learning and teaching is possible through his organization. Ayman Sadiq not only manages the Ten Minute School, but also serves as a teacher here.
                          </p>
                     </div>
-                    <div className='absolute top-0 bg-black/40 backdrop-blur-md bottom-0 w-full flex justify-center items-center text-xl font-semibold rounded-md text-white'>
+                    {/* <div className='absolute top-0 bg-black/40 backdrop-blur-md bottom-0 w-full flex justify-center items-center text-xl font-semibold rounded-md text-white'>
                          Surprise!!!☺
-                    </div>
+                    </div> */}
                </div>
 
           </div>
