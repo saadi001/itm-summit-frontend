@@ -1,5 +1,7 @@
 import React from 'react';
 import About from './About/About';
+import Contact from './Contact/Contact';
+import Footer from './Footer/Footer';
 import Schedule from './Shcedule/Schedule';
 import KeynoteSpeaker from './Speakers/KeynoteSpeaker/KeynoteSpeaker';
 import TopLandingPage from './TopLandingPage/TopLandingPage';
@@ -12,6 +14,8 @@ const Home = () => {
                     <About></About>
                     <KeynoteSpeaker></KeynoteSpeaker>
                     <Schedule></Schedule>
+                    <Contact></Contact>
+                    <Footer></Footer>
                </div>
           </div>
      );

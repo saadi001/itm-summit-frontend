@@ -6,7 +6,7 @@ const Schedule = () => {
      const [schedules, setSchedule] = useState([]);
 
      useEffect(() => {
-          fetch('http://localhost:5000/schedule')
+          fetch('https://itmsummitbackend.vercel.app/schedule')
                .then(res => res.json())
                .then(data => setSchedule(data))
      }, [])
