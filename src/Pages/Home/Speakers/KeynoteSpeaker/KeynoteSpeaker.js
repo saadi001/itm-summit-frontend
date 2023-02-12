@@ -3,8 +3,8 @@ import aymanSadiq from '../../../../Asset/image/Ayman-Sadiq.jpg'
 
 const KeynoteSpeaker = () => {
      return (
-          <div className='my-14 '>
-               <p className='text-2xl md:text-4xl font-bold text-center mb-10'>Keynote Speaker</p>
+          <div id='keynotespeaker' className='md:my-20 my-12'>
+               <p className='text-2xl md:text-4xl font-bold text-center mb-10 md:mb-16'>Keynote Speaker</p>
                <div className='grid grid-cols-1 sm:grid-cols-2 relative rounded-md gap-0 sm:gap-3'>
                     <div>
                          <img className='w-full h-full object-cover rounded-tl-md rounded-tr-md sm:rounded-tr-none sm:rounded-bl-md' src={aymanSadiq} alt="" />

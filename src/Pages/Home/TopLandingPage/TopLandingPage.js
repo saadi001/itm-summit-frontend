@@ -10,7 +10,7 @@ const TopLandingPage = () => {
    
      const dateTimeAfterThreeDays = NOW_IN_MS + THREE_DAYS_IN_MS;
      return (
-          <div className='toplandingpage grid content-between min-h-screen '>
+          <div id='home' className='toplandingpage grid content-between min-h-screen '>
                <Navbar></Navbar>
                <MiddleDetails></MiddleDetails>
                <CountdownTimer targetDate={dateTimeAfterThreeDays} />
