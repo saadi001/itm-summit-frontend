@@ -20,9 +20,9 @@ const KeynoteSpeaker = () => {
                               Ayman Sadiq is a Bangladeshi education entrepreneur. He is the founder of Ten Minute School, an online educational institution. Ayman Sadiq has implemented this idea in the country where online learning and teaching is possible through his organization. Ayman Sadiq not only manages the Ten Minute School, but also serves as a teacher here.
                          </p>
                     </div>
-                    {/* <div className='absolute top-0 bg-black/40 backdrop-blur-md bottom-0 w-full flex justify-center items-center text-xl font-semibold rounded-md text-white'>
+                    <div className='absolute top-0 bg-black/40 backdrop-blur-md bottom-0 w-full flex justify-center items-center text-xl font-semibold rounded-md text-white'>
                          Surprise!!!☺
-                    </div> */}
+                    </div>
                </div>
 
           </div>
