@@ -25,7 +25,7 @@ const Navbar = () => {
                               <label tabIndex={0} className="btn btn-ghost lg:hidden">
                                    <svg xmlns="http://www.w3.org/2000/svg" className={`h-6 w-6 ${color ? 'text-gray-800':'text-white'}`} fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                               </label>
-                              <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box text-gray-800 w-52">
+                              <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box text-gray-800 w-52 z-50">
                                    <li><a href='#home' className='px-6 py-3'>Home</a></li>
                                    <li><a href='#about' className='px-6 py-3'>About</a></li>
                                    <li tabIndex={0}>
@@ -33,11 +33,11 @@ const Navbar = () => {
                                              Speakers
                                              <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
                                         </a>
-                                        <ul className="p-2 bg-base-100 z-20">
+                                        <ul className="p-2 bg-base-100 ">
                                              <li><a href='#keynotespeaker'>Keynote Speaker</a></li>
                                              <li><a href='#guest'>Honourable Guest</a></li>
                                              <li><a href='#pmpsession'>PMP session</a></li>
-                                             <li><a>Panel Member</a></li>
+                                             <li><a href='#panel'>Panel Discussion</a></li>
                                         </ul>
                                    </li>
                                    <li><a href='#schedule' className='px-6 py-3'>Schedule</a></li>
@@ -61,7 +61,7 @@ const Navbar = () => {
                                         <li><a href='#keynotespeaker'>Keynote Speaker</a></li>
                                         <li><a href='#guest'>Honourable Guest</a></li>
                                         <li><a href='#pmpsession'>PMP session</a></li>
-                                        <li><a>Panel Member</a></li>
+                                        <li><a href='#panel'>Panel Discussion</a></li>
                                    </ul>
                               </li>
                               <li><a href='#schedule'>Schedule</a></li>

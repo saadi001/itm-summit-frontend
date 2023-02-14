@@ -12,8 +12,8 @@ const Schedule = () => {
                .then(data => setSchedule(data))
      }, [])
      return (
-          <div id='schedule'>
-               <p className='text-2xl md:text-4xl font-bold text-center mb-10 md:mb-16'>Program Schedule</p>
+          <div id='schedule '>
+               <p className='text-2xl md:text-4xl font-bold text-center pt-10 md:pt-16  mb-10 md:mb-16'>Program Schedule</p>
                <div className='flex gap-4'>
                     <div className='w-1/3 hidden lg:inline-block'>
                          <p className='text-2xl md:text-4xl font-semibold'>Check The Schedule</p>

@@ -2,6 +2,7 @@ import React from 'react';
 import About from './About/About';
 import Contact from './Contact/Contact';
 import Footer from './Footer/Footer';
+import Panelists from './Panelists/Panelists';
 import Schedule from './Shcedule/Schedule';
 import Guest from './Speakers/Guest/Guest';
 import KeynoteSpeaker from './Speakers/KeynoteSpeaker/KeynoteSpeaker';
@@ -17,6 +18,7 @@ const Home = () => {
                     <KeynoteSpeaker></KeynoteSpeaker>
                     <Guest></Guest>
                     <PmpSession></PmpSession>
+                    <Panelists></Panelists>
                     <Schedule></Schedule>
                     <Contact></Contact>
                     <Footer></Footer>
