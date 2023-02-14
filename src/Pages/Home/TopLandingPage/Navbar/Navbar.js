@@ -17,7 +17,7 @@ const Navbar = () => {
      window.addEventListener('scroll', changeColor);
 
      return (
-          <div className={`lg:px-20 md:px-12 px-2 py-[-16px] z-10 ${color ? 'bg-white/90 text-gray-800 fixed left-0 right-0 ' : 'bg-transparent text-white'} duration-200 ease-in`} >
+          <div className={`lg:px-20 md:px-12 px-2 py-[-16px] z-10 ${color ? 'bg-white/95 text-gray-800 fixed left-0 right-0 ' : 'bg-transparent text-white'} duration-200 ease-in`} >
                <div className="navbar justify-between">
                     <div className="flex justify-between">
                          <div className="dropdown">
@@ -35,6 +35,7 @@ const Navbar = () => {
                                         </a>
                                         <ul className="p-2 bg-base-100 z-20">
                                              <li><a href='#keynotespeaker'>Keynote Speaker</a></li>
+                                             <li><a href='#guest'>Honourable Guest</a></li>
                                              <li><a>Panel Member</a></li>
                                         </ul>
                                    </li>
@@ -43,7 +44,7 @@ const Navbar = () => {
                                    <li className={`bg-pink-700 px-6 py-3 rounded-md hover:bg-blue-800 duration-200 ease-in cursor-pointer ${color && 'text-white'}`}>Competition</li>
                               </ul>
                          </div>
-                         <Link to={'/'} className="w-16 md:w-24 text-xl"><img src={logo} alt="" /></Link>
+                         <Link to={'/'} className="w-16 md:w-20 lg:w-24 text-xl"><img src={logo} alt="" /></Link>
                     </div>
                     {/* big screen view  */}
                     <div className=" hidden lg:flex">
@@ -57,6 +58,7 @@ const Navbar = () => {
                                    </a>
                                    <ul className="p-2 bg-base-100 text-gray-800 font-semibold">
                                         <li><a href='#keynotespeaker'>Keynote Speaker</a></li>
+                                        <li><a href='#guest'>Honourable Guest</a></li>
                                         <li><a>Panel Member</a></li>
                                    </ul>
                               </li>

@@ -24,18 +24,18 @@ const Schedule = () => {
                          </div> */}
                     </div>
                     <div className='w-full lg:w-2/3'>
-                         <div className='text-center text-xl font-medium py-3 bg-blue-500 text-white'>Saturday, 4 March 2019</div>
+                         <div className='text-center text-xl font-medium py-3 bg-blue-500 text-white'>Saturday, 4 March 2023</div>
                          <div>
                               {
                                    schedules.map(schedule => {
                                         return (
-                                             <div key={schedule.id} className='flex items-center gap-3 py-5 border'>
+                                             <div key={schedule.id} className={`flex items-center gap-3 py-5 border-x border-b ${schedule?.id === 1 || schedule?.id === 3 || schedule?.id === 7 || schedule?.id === 9 ? 'bg-pink-500/20': ""}`}>
                                                   <div className='w-16 sm:w-auto px-4 text-sm md:text-base font-medium'>{schedule?.time}</div>
                                                   <div>
                                                        <div  className='flex gap-4'>
                                                             <div className='w-16 md:w-24'><img className='w-16 md:w-24 object-cover' src={schedule?.images} alt="" /></div>
-                                                            <div className={`${schedule?.id === 1 || schedule?.id === 3 || schedule?.id === 8 ? 'flex items-center': ""}`}>
-                                                                 <p className='text-base md:text-lg font-semibold'>{schedule?.name}</p>
+                                                            <div className={`${schedule?.id === 1 || schedule?.id === 3 || schedule?.id === 9 ? 'flex items-center ': ""}`}>
+                                                                 <p className='text-base md:text-lg font-semibold text-start'>{schedule?.name}</p>
                                                                  <div className='mt-3'>
                                                                       <div className='text-xs md:text-base '>
                                                                            {
