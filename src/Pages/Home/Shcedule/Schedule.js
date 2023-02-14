@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { GoLocation } from "react-icons/go";
 import { GiDuration } from "react-icons/gi";
+import unknown from '../../../Asset/image/unknown1.jpg'
 
 const Schedule = () => {
      const [schedules, setSchedule] = useState([]);
@@ -29,11 +30,11 @@ const Schedule = () => {
                               {
                                    schedules.map(schedule => {
                                         return (
-                                             <div key={schedule.id} className={`flex items-center gap-3 py-5 border-x border-b ${schedule?.id === 1 || schedule?.id === 3 || schedule?.id === 7 || schedule?.id === 9 ? 'bg-pink-500/20': ""}`}>
+                                             <div key={schedule.id} className={`flex items-center gap-3 py-5 border-x border-b ${schedule?.id === 1 || schedule?.id === 3 || schedule?.id === 7 || schedule?.id === 9 ? 'bg-pink-400/20': ""}`}>
                                                   <div className='w-16 sm:w-auto px-4 text-sm md:text-base font-medium'>{schedule?.time}</div>
                                                   <div>
                                                        <div  className='flex gap-4'>
-                                                            <div className='w-16 md:w-24'><img className='w-16 md:w-24 object-cover' src={schedule?.images} alt="" /></div>
+                                                            <div className='w-16 md:w-24'><img className='w-16 md:w-24 object-cover' src={schedule?.images?.[0]} alt="" /></div>
                                                             <div className={`${schedule?.id === 1 || schedule?.id === 3 || schedule?.id === 9 ? 'flex items-center ': ""}`}>
                                                                  <p className='text-base md:text-lg font-semibold text-start'>{schedule?.name}</p>
                                                                  <div className='mt-3'>

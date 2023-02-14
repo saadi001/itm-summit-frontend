@@ -5,7 +5,7 @@ const Guest = () => {
      return (
           <div id='guest' className='md:my-20 my-12'>
                <p className='text-2xl md:text-4xl font-bold text-center mb-10 md:mb-16'>Honourable Guest</p>
-               <div className='grid grid-cols-1 md:grid-cols-2 relative rounded-md gap-0 sm:gap-3'>
+               <div className='grid grid-cols-1 md:grid-cols-2 shadow-md relative rounded-md gap-0 sm:gap-3'>
                     
                     <div className='p-3 order-last md:order-first'>
                          <p className='text-lg md:text-2xl font-semibold md:text-end'>Enayet Chowdhury</p>
@@ -18,11 +18,11 @@ const Guest = () => {
                          </p>
                     </div>
                     <div className='order-first md:order-last'>
-                         <img className='w-full md:w-5/6 md:h-full object-cover rounded-tr-md md:rounded-br-md rounded-br-none rounded-tl-md md:rounded-tl-none ' src={enayet} alt="" />
+                         <img className='w-full h-full object-cover rounded-tr-md md:rounded-br-md rounded-br-none rounded-tl-md md:rounded-tl-none ' src={enayet} alt="" />
                     </div>
-                    <div className='absolute top-0 bg-black/60 backdrop-blur-md bottom-0 w-full flex justify-center items-center text-xl font-semibold rounded-md text-white'>
-                         Coming soon!!!☺
-                    </div>
+                         <div className='absolute top-0 bg-black/60 backdrop-blur-md bottom-0 w-full flex justify-center items-center text-xl font-semibold rounded-md text-white'>
+                              Coming soon!!!☺
+                         </div>
                </div>
 
           </div>

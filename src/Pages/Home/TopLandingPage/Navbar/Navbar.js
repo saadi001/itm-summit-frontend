@@ -36,6 +36,7 @@ const Navbar = () => {
                                         <ul className="p-2 bg-base-100 z-20">
                                              <li><a href='#keynotespeaker'>Keynote Speaker</a></li>
                                              <li><a href='#guest'>Honourable Guest</a></li>
+                                             <li><a href='#pmpsession'>PMP session</a></li>
                                              <li><a>Panel Member</a></li>
                                         </ul>
                                    </li>
@@ -59,6 +60,7 @@ const Navbar = () => {
                                    <ul className="p-2 bg-base-100 text-gray-800 font-semibold">
                                         <li><a href='#keynotespeaker'>Keynote Speaker</a></li>
                                         <li><a href='#guest'>Honourable Guest</a></li>
+                                        <li><a href='#pmpsession'>PMP session</a></li>
                                         <li><a>Panel Member</a></li>
                                    </ul>
                               </li>

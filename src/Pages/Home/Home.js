@@ -5,16 +5,18 @@ import Footer from './Footer/Footer';
 import Schedule from './Shcedule/Schedule';
 import Guest from './Speakers/Guest/Guest';
 import KeynoteSpeaker from './Speakers/KeynoteSpeaker/KeynoteSpeaker';
+import PmpSession from './Speakers/PmpSession/PmpSession';
 import TopLandingPage from './TopLandingPage/TopLandingPage';
 
 const Home = () => {
      return (
           <div>
                <TopLandingPage></TopLandingPage>
-               <div className='2xl:max-w-7xl xl:mx-auto xl:max-w-5xl lg:mx-20 md:mx-12 mx-5'>
+               <div className='2xl:max-w-7xl 2xl:mx-auto xl:mx-auto xl:max-w-5xl lg:mx-20 md:mx-12 mx-5'>
                     <About></About>
                     <KeynoteSpeaker></KeynoteSpeaker>
                     <Guest></Guest>
+                    <PmpSession></PmpSession>
                     <Schedule></Schedule>
                     <Contact></Contact>
                     <Footer></Footer>
