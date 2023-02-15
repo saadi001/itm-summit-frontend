@@ -45,7 +45,7 @@ const Navbar = () => {
                                    <li className={`bg-pink-700 px-6 py-3 rounded-md hover:bg-blue-800 duration-200 ease-in cursor-pointer ${color && 'text-white'}`}>Competition</li>
                               </ul>
                          </div>
-                         <Link to={'/'} className="w-16 md:w-20 lg:w-24 text-xl"><img src={logo} alt="" /></Link>
+                         <Link to={'/'} className={`${color ? 'w-16' : 'w-16 md:w-20 lg:w-24 text-xl'} `}><img src={logo} alt="" /></Link>
                     </div>
                     {/* big screen view  */}
                     <div className=" hidden lg:flex">
@@ -66,7 +66,7 @@ const Navbar = () => {
                               </li>
                               <li><a href='#schedule'>Schedule</a></li>
                               <li><a href='#contact'>Contact</a></li>
-                              <li className={`bg-pink-700 px-6 py-3 rounded-md hover:bg-blue-800 duration-200 ease-in cursor-pointer ${color && 'text-white'}`}>Competition</li>
+                              <li className={`bg-pink-700 px-6 py-3 rounded-md hover:bg-blue-800 duration-200 ease-in ml-3 cursor-pointer ${color && 'text-white'}`}>Competition</li>
                          </ul>
                     </div>
 
