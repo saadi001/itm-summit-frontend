@@ -6,14 +6,22 @@ import { IoMdArrowDropdown } from "react-icons/io";
 const Schedule = () => {
      const [schedules, setSchedule] = useState([]);
      const [open, setOpen] = useState(false);
+     const [toggleState, setToggleState] = useState()
 
      useEffect(() => {
           fetch('https://itmsummitbackend.vercel.app/schedule')
                .then(res => res.json())
                .then(data => setSchedule(data))
      }, [])
+
+     const handleDetails = (id) => {
+          // setOpen(!open)
+          setToggleState(id)
+
+          setOpen(!open)
+     }
      return (
-          <div id='schedule '>
+          <div id='schedule'>
                <p className='text-2xl md:text-4xl font-bold text-center pt-10 md:pt-16  mb-10 md:mb-16'>Program Schedule</p>
                <div className='flex gap-4'>
                     <div className='w-1/4 hidden lg:inline-block'>
@@ -31,49 +39,66 @@ const Schedule = () => {
                               {
                                    schedules.map(schedule => {
                                         return (
-                                             <div key={schedule.id} className={` grid grid-cols-4 content-center gap-3 py-5 border-x border-b ${schedule?.id === 1 || schedule?.id === 3 || schedule?.id === 7 || schedule?.id === 9 ? 'bg-pink-400/20' : ""}`}>
-                                                  <div className='flex items-center'><div className=' sm:w-auto px-4 text-sm font-medium'>{schedule?.time}</div></div>
-                                                  <div className='col-span-3'>
-                                                       <div className='grid grid-cols-4 gap-3'>
-                                                            <div className=''>
-                                                                 <img className=' object-cover' src={schedule?.images?.[0]} alt="" />
-                                                            </div>
-                                                            <div onClick={() => setOpen(!open)} className={`col-span-3 ${schedule?.id === 1 || schedule?.id === 3 || schedule?.id === 9 ? 'flex items-center ' : ""}`}>
-                                                                 <div className='flex justify-between'>
-                                                                      <div>
-                                                                           <p className='text-base md:text-lg font-semibold text-start'>{schedule?.Method}</p>
-                                                                           <div className='mt-3'>
-                                                                                <div className='text-xs md:text-sm '>
-                                                                                     {
-                                                                                          schedule?.location ?
-                                                                                               <div className='grid grid-cols-2 gap-1 font-medium'>
-                                                                                                    <div className='flex gap-1'><span className='text-pink-600'><GoLocation /></span> <span className='-mt-[3px]'>{schedule?.location}</span></div>
-                                                                                                    <div className='flex  gap-1 ml-3'>
-                                                                                                         <span className='text-pink-600'><GiDuration /></span> <span className='-mt-[3px]'>{schedule?.Duration}</span>
+                                             <div>
+                                                  <div key={schedule.id} className={` grid grid-cols-4 content-center gap-3 py-5 border-x border-b ${schedule?.id === 1 || schedule?.id === 3 || schedule?.id === 7 || schedule?.id === 9 ? 'bg-pink-400/20' : ""}`}>
+                                                       <div className='flex items-center'><div className=' sm:w-auto px-4 text-sm font-medium'>{schedule?.time}</div></div>
+                                                       <div className='col-span-3'>
+                                                            <div className='grid grid-cols-1 sm:grid-cols-4 gap-3'>
+                                                                 <div className=''>
+                                                                      <img className='w-1/2 sm:w-full object-cover' src={schedule?.images?.[0]} alt="" />
+                                                                 </div>
+                                                                 <div onClick={() => handleDetails(schedule.id)} className={`sm:col-span-3 ${schedule?.id === 1 || schedule?.id === 3 || schedule?.id === 7 || schedule?.id === 9 ? 'flex items-center ' : ""}`}>
+                                                                      <div className='flex justify-between'>
+                                                                           <div>
+                                                                                <p className='text-base md:text-lg font-semibold text-start'>{schedule?.Method}</p>
+                                                                                <div className='mt-3'>
+                                                                                     <div className='text-xs md:text-sm '>
+                                                                                          {
+                                                                                               schedule?.location ?
+                                                                                                    <div className='grid grid-cols-2 gap-1 font-medium'>
+                                                                                                         <div className='flex gap-1'><span className='text-pink-600'><GoLocation /></span> <span className='-mt-[3px]'>{schedule?.location}</span></div>
+                                                                                                         <div className='flex  gap-1 ml-3'>
+                                                                                                              <span className='text-pink-600'><GiDuration /></span> <span className='-mt-[3px]'>{schedule?.Duration}</span>
 
-                                                                                                    </div>
-                                                                                               </div> : ''
-                                                                                     }
+                                                                                                         </div>
+                                                                                                    </div> : ''
+                                                                                          }
+                                                                                     </div>
                                                                                 </div>
                                                                            </div>
+                                                                           {schedule?.content?.title?.length > 0 ?
+                                                                                <div className='px-3 flex items-center '>
+                                                                                     <IoMdArrowDropdown className='text-lg' />
+                                                                                </div> : ''
+                                                                           }
                                                                       </div>
-                                                                      {schedule?.content?.length > 0 ?
-                                                                           <div className='px-3 flex items-center '>
-                                                                                <IoMdArrowDropdown className='text-lg' />
-                                                                           </div> : ''
-                                                                      }
-                                                                 </div>
 
+                                                                 </div>
                                                             </div>
                                                        </div>
+
+
+
                                                   </div>
-
-                                                  {   
-                                                       <div className={`duration-300 transition-all ease-in ${open ? 'h-0 opacity-0' : 'h-auto'}`}>
-                                                            hello
-                                                       </div>
-                                                  }
-
+                                                  <div className={`${toggleState === schedule.id && open ? "block" : "hidden"} duration-300 ease-in ${toggleState=== 1 || schedule?.id === 3 || schedule?.id === 7 || schedule?.id === 9 ? "h-0" : "h-auto"}`}>
+                                                       {
+                                                            <div className={`w-full bg-gray-500/10`}>
+                                                                 <div className='px-6 sm:px-12 py-8'>
+                                                                      {/* <div>
+                                                                      <img src={schedule?.images} alt="" />
+                                                                 </div> */}
+                                                                      <div>
+                                                                           <p className='text-lg font-semibold '>{schedule?.content?.title}</p>
+                                                                           <ul className='list-disc ml-3 sm:ml-6 mt-3'>
+                                                                                {
+                                                                                     schedule?.content?.option?.map((list) => <li className='py-[2px]'>{list?.list}</li>)
+                                                                                }
+                                                                           </ul>
+                                                                      </div>
+                                                                 </div>
+                                                            </div>
+                                                       }
+                                                  </div>
                                              </div>
                                         )
                                    })

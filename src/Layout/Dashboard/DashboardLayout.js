@@ -6,7 +6,9 @@ const DashboardLayout = () => {
      return (
           <div>
                <Navbar></Navbar>
-               <Outlet></Outlet>
+               <div className='2xl:max-w-7xl 2xl:mx-auto xl:mx-auto xl:max-w-5xl lg:mx-20 md:mx-12 mx-5 border'>
+                    <Outlet></Outlet>
+               </div>
           </div>
      );
 };

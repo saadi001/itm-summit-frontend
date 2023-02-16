@@ -1,12 +1,13 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../../../Asset/logo/328496960_760463888831247_1725153779242283475_n-removebg-preview.png'
+import logo2 from '../../../../Asset/logo/Logo-02.png'
 
 const Navbar = () => {
      const [color, setColor] = useState(false)
 
      const changeColor = () =>{
-          if(window.scrollY >= 90){
+          if(window.scrollY >= 100){
                setColor(true)
           }
           else{
@@ -17,7 +18,7 @@ const Navbar = () => {
      window.addEventListener('scroll', changeColor);
 
      return (
-          <div className={`lg:px-20 md:px-12 px-2 py-[-16px] z-10 ${color ? 'bg-white/95 text-gray-800 fixed left-0 right-0 ' : 'bg-transparent text-white'} duration-200 ease-in`} >
+          <div className={`lg:px-20 md:px-12 px-2 z-10 ${color ? 'bg-white/95 text-gray-800 shadow-md fixed left-0 right-0 ' : 'bg-transparent text-white'} duration-200 ease-in`} >
                <div className="navbar justify-between">
                     <div className="flex justify-between">
                          <div className="dropdown">
@@ -45,7 +46,7 @@ const Navbar = () => {
                                    <li className={`bg-pink-700 px-6 py-3 rounded-md hover:bg-blue-800 duration-200 ease-in cursor-pointer ${color && 'text-white'}`}>Competition</li>
                               </ul>
                          </div>
-                         <Link to={'/'} className={`${color ? 'w-16' : 'w-16 md:w-20 lg:w-24 text-xl'} `}><img src={logo} alt="" /></Link>
+                         <Link to={'/'} className={`${color ? 'w-16' : 'w-16 md:w-20 lg:w-28 text-xl'} `}><img src={logo} alt="" /></Link>
                     </div>
                     {/* big screen view  */}
                     <div className=" hidden lg:flex">
