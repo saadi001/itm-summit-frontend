@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { MdReportGmailerrorred } from "react-icons/md";
+import { useNavigate } from 'react-router-dom';
+import Loading from '../Loading/Loading';
 
 const Registration = () => {
+     const navigate = useNavigate();
      const [checkbox, setCheckbox] = useState(false);
      const [selectedValue, setSelectedValue] = useState('');
      const [laoding, setLoading] = useState(false)
@@ -54,6 +57,7 @@ const Registration = () => {
                          })
                               .then(res => res.json())
                               .then(() => {
+                                   navigate('/confirmation')
                                    setLoading(false)
                               })
                     }
@@ -64,7 +68,7 @@ const Registration = () => {
      return (
           <div>
                {
-                    laoding ? <div>loading</div> :
+                    laoding ? <div className='pt-3 flex justify-center'><Loading></Loading></div> :
                          <div className='pb-10'>
                               <section className="p-4 sm:p-6 md:p-10 mt-6 mx-auto bg-white rounded-md shadow-md">
                                    <h2 className="text-lg font-semibold text-gray-700 capitalize dark:text-white">Registration Form</h2>

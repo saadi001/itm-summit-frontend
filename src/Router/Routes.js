@@ -1,4 +1,5 @@
 import DashboardLayout from "../Layout/Dashboard/DashboardLayout";
+import Confirmation from "../Pages/Confirmation/Confirmation";
 import Login from "../Pages/Login/Login";
 import Registration from "../Pages/Registration/Registration";
 
@@ -27,5 +28,9 @@ export const router = createBrowserRouter([
      {
           path: '/login',
           element: <Login></Login>
+     },
+     {
+          path: '/confirmation',
+          element: <Confirmation></Confirmation>
      }
 ])
