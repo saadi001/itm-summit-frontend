@@ -1,4 +1,5 @@
 import DashboardLayout from "../Layout/Dashboard/DashboardLayout";
+import Login from "../Pages/Login/Login";
 import Registration from "../Pages/Registration/Registration";
 
 const { createBrowserRouter } = require("react-router-dom");
@@ -22,5 +23,9 @@ export const router = createBrowserRouter([
                     element: <Registration></Registration>
                }
           ])
+     },
+     {
+          path: '/login',
+          element: <Login></Login>
      }
 ])
