@@ -18,7 +18,7 @@ const Schedule = () => {
           // setOpen(!open)
           setToggleState(id)
 
-          setOpen(!open)
+          // setOpen(!open)
      }
      return (
           <div id='schedule'>
@@ -80,7 +80,7 @@ const Schedule = () => {
 
 
                                                   </div>
-                                                  <div className={`${toggleState === schedule.id && open ? "block" : "hidden"} duration-300 ease-in ${toggleState=== 1 || schedule?.id === 3 || schedule?.id === 7 || schedule?.id === 9 ? "h-0" : "h-auto"}`}>
+                                                  <div className={`${toggleState === schedule.id ? "block" : "hidden"} duration-300 ease-in ${toggleState=== 1 || schedule?.id === 3 || schedule?.id === 7 || schedule?.id === 9 ? "h-0 opacity-0" : "h-auto"}`}>
                                                        {
                                                             <div className={`w-full bg-gray-500/10`}>
                                                                  <div className='px-6 sm:px-12 py-8'>
