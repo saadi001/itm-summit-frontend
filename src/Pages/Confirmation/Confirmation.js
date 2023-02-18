@@ -8,7 +8,7 @@ const Confirmation = () => {
                     <div className='text-center flex justify-center text-4xl text-pink-600'><GiConfirmed/></div>
                     <p>Data has been stored.</p>
                     <p className='mb-3'>You will get confirmation email</p>
-                    <a href="http://itmsummit.com/dashboard/registration" className='text-sm bg-blue-600 text-white px-5 py-2  rounded'>register again</a>
+                    <a href="/dashboard/registration" className='text-sm bg-blue-600 text-white px-5 py-2  rounded'>register again</a>
                </div>
           </div>
      );
