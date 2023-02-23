@@ -76,7 +76,7 @@ const Registration = () => {
                     loading ? <div className='pt-3 flex justify-center items-center min-h-screen'><Loading></Loading></div> :
                          <div className='pb-10'>
                               <section className="p-4 sm:p-6 md:p-10 pt-6 mx-auto bg-white rounded-md shadow-md">
-                                   <h2 className="text-lg font-semibold text-gray-700 capitalize ">Registration Form</h2>
+                                   <h2 className="text-lg font-semibold text-gray-700 ">Registration Form of ITM SUMMIT</h2>
 
                                    <form onSubmit={handleSubmit(handleRegisterForm)}>
                                         <div className="grid grid-cols-1 gap-6 my-6 sm:grid-cols-2">
