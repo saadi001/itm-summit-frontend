@@ -17,7 +17,7 @@ const MiddleDetails = () => {
                     </div>
                     <div className='text-center lg:text-7xl md:text-5xl text-3xl font-medium pt-4 pb-8  max-w-5xl lg:mx-auto mx-3'>Information Technology Management Summit 2023</div>
                     <div className='flex justify-center'>
-                         <Link to={'/dashboard/registration'} className='bg-white text-sm md:text-base px-5 md:px-8 py-2 md:py-3 text-pink-600 cursor-pointer hover:tracking-widest hover:bg-pink-600 hover:text-white hover:font-semibold duration-300 ease-in '>Registration Now</Link>
+                         <Link to={'/registration'} className='bg-white text-sm md:text-base px-5 md:px-8 py-2 md:py-3 text-pink-600 cursor-pointer hover:tracking-widest hover:bg-pink-600 hover:text-white hover:font-semibold duration-300 ease-in '>Registration Now</Link>
                     </div>
                </div>
           </div>

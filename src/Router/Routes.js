@@ -1,10 +1,10 @@
+import { createBrowserRouter } from "react-router-dom";
 import DashboardLayout from "../Layout/Dashboard/DashboardLayout";
+import Competition from "../Pages/Competition/Competition";
 import Confirmation from "../Pages/Confirmation/Confirmation";
+import Home from "../Pages/Home/Home";
 import Login from "../Pages/Login/Login";
 import Registration from "../Pages/Registration/Registration";
-
-const { createBrowserRouter } = require("react-router-dom");
-const { default: Home } = require("../Pages/Home/Home");
 
 export const router = createBrowserRouter([
      {
@@ -12,18 +12,8 @@ export const router = createBrowserRouter([
           element: <Home></Home>
      },
      {
-          path: '/dashboard',
-          element: <DashboardLayout></DashboardLayout>,
-          children: ([
-               {
-                    path: '/dashboard',
-                    element: <div></div>
-               },
-               {
-                    path: '/dashboard/registration',
-                    element: <Registration></Registration>
-               }
-          ])
+          path: '/registration',
+          element: <Registration></Registration>
      },
      {
           path: '/login',
@@ -32,5 +22,9 @@ export const router = createBrowserRouter([
      {
           path: '/confirmation',
           element: <Confirmation></Confirmation>
+     },
+     {
+          path: '/competition',
+          element: <Competition></Competition>
      }
 ])

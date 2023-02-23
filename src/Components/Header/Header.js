@@ -3,6 +3,7 @@ import logo from '../../Asset/logo/328496960_760463888831247_1725153779242283475
 import unknown from '../../Asset/image/unknown1.jpg'
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../Contexts/AuthProvider';
+import { IoLogInOutline } from "react-icons/io5";
 
 const Header = () => {
      const {logOut, user} = useContext(AuthContext);
@@ -22,7 +23,7 @@ const Header = () => {
                     {/* <input className='py-1 px-1 w-24 sm:w-auto rounded-md border border-gray-300' type="text" />
                     <img className='w-8 h-8 rounded-full border' src={user?.photoURL ? user?.photoURL : unknown} alt="" />
                     <button onClick={handleLogout} className='bg-pink-600 text-white px-5 py-[6px] rounded cursor-pointer'>log out</button> */}
-                    <p className='text-lg font-semibold'>04 March, 2023</p>
+                    <p className='text-lg font-semibold flex items-center'>04 March, 2023 <Link to={'/login'} className='ml-2 text-pink-600 text-2xl p-1 hover:bg-slate-400/25 cursor-pointer rounded-full'><IoLogInOutline/></Link></p>
                </div>
           </div>
      );
