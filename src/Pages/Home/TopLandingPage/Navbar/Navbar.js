@@ -18,7 +18,7 @@ const Navbar = () => {
      window.addEventListener('scroll', changeColor);
 
      return (
-          <div className={`lg:px-20 md:px-12 px-2 z-10 ${color ? 'bg-white/95 text-gray-800 shadow-md fixed left-0 right-0 ' : 'bg-transparent text-white'} duration-200 ease-in`} >
+          <div className={`lg:px-20 md:px-12 px-2 z-10 ${color ? 'bg-white/90 text-gray-800 shadow-md fixed left-0 right-0 backdrop-blur-sm' : 'bg-transparent text-white'} duration-200 ease-in`} >
                <div className="navbar justify-between">
                     <div className="flex justify-between">
                          <div className="dropdown">
@@ -35,8 +35,8 @@ const Navbar = () => {
                                              <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
                                         </a>
                                         <ul className="p-2 bg-base-100 ">
-                                             <li><a href='#keynotespeaker'>Keynote Speaker</a></li>
-                                             <li><a href='#guest'>Honourable Guest</a></li>
+                                             <li><a href='#keynotespeaker'>Keynote Speakers</a></li>
+                                             {/* <li><a href='#guest'>Honourable Guest</a></li> */}
                                              <li><a href='#pmpsession'>PMP session</a></li>
                                              <li><a href='#panel'>Panel Discussion</a></li>
                                         </ul>
@@ -59,8 +59,8 @@ const Navbar = () => {
                                         <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg>
                                    </a>
                                    <ul className="p-2 bg-base-100 text-gray-800 font-semibold">
-                                        <li><a href='#keynotespeaker'>Keynote Speaker</a></li>
-                                        <li><a href='#guest'>Honourable Guest</a></li>
+                                        <li><a href='#keynotespeaker'>Keynote Speakers</a></li>
+                                        {/* <li><a href='#guest'>Honourable Guest</a></li> */}
                                         <li><a href='#pmpsession'>PMP session</a></li>
                                         <li><a href='#panel'>Panel Discussion</a></li>
                                    </ul>

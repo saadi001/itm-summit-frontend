@@ -22,7 +22,7 @@ const Registration = () => {
      }
 
      const handleRegisterForm = (data) => {
-          // console.log(selectedValue, data)
+          console.log(selectedValue, data)
           setLoading(true)
           const { name,department,id, email, semester, phone, transactionID } = data;
 
@@ -122,7 +122,7 @@ const Registration = () => {
                                              </div> <br className='hidden sm:inline-block'/>
 
                                              <div>
-                                                  <p className='font-medium'>Use <span className='text-pink-600'>send money</span> option by Bkash/Nagad and send 500/300 taka to <span className='text-pink-600'>01757210124</span>. <span className='text-sm font-normal'>(please use your id as reference)</span></p>
+                                                  <p className='font-medium'>Use <span className='text-pink-600'>send money</span> option by Bkash/Nagad and send 500/300/100 taka to <span className='text-pink-600'>01757210124</span>. <span className='text-sm font-normal'>(please use your id as reference)</span></p>
                                                  
                                                   <div className='mt-5'>
                                                        <label className='flex items-center'>
@@ -147,6 +147,17 @@ const Registration = () => {
                                                             <span className='text-sm'>300 (includes competition & souvenir)</span>
                                                        </label>
 
+                                                       <label className='flex items-center mt-5'>
+                                                            <input
+                                                                 className='radio radio-secondary mr-2'
+                                                                 type="radio"
+                                                                 value="100"
+                                                                 checked={selectedValue === '100'}
+                                                                 onChange={handleOptionChange}
+                                                            />
+                                                            <span className='text-sm'>100 (Only registration & certification)</span>
+                                                       </label>
+
                                                   </div>
 
                                              </div>
@@ -158,7 +169,7 @@ const Registration = () => {
                                              </div>
                                         </div>
 
-                                        <div className="form-control mt-10">
+                                        <div className="form-control mt-12">
                                              <label className="flex items-center cursor-pointer">
                                                   <input onChange={(e) => handleCheckbox(e.target.checked)} type="checkbox" className="checkbox checkbox-primary" />
                                                   <span className="ml-3 label-text">Accept our terms and condition!</span>

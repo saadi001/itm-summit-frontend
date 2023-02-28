@@ -40,14 +40,14 @@ const Schedule = () => {
                                    schedules.map(schedule => {
                                         return (
                                              <div>
-                                                  <div key={schedule.id} className={` grid grid-cols-4 content-center gap-3 py-5 border-x border-b ${schedule?.id === 1 || schedule?.id === 3 || schedule?.id === 7 || schedule?.id === 9 ? 'bg-pink-400/20' : ""}`}>
+                                                  <div key={schedule.id} className={` grid grid-cols-4 content-center gap-3 py-5 border-x border-b ${schedule?.id === 1 || schedule?.id === 5 || schedule?.id === 8 ? 'bg-pink-400/10' : ""}`}>
                                                        <div className='flex items-center'><div className=' sm:w-auto px-4 text-sm font-medium'>{schedule?.time}</div></div>
                                                        <div className='col-span-3'>
                                                             <div className='grid grid-cols-1 sm:grid-cols-4 gap-3'>
                                                                  <div className=''>
                                                                       <img className='w-1/2 sm:w-full object-cover' src={schedule?.images?.[0]} alt="" />
                                                                  </div>
-                                                                 <div onClick={() => handleDetails(schedule.id)} className={`sm:col-span-3 ${schedule?.id === 1 || schedule?.id === 3 || schedule?.id === 7 || schedule?.id === 9 ? 'flex items-center ' : ""}`}>
+                                                                 <div onClick={() => handleDetails(schedule.id)} className={`sm:col-span-3 ${schedule?.id === 1 || schedule?.id === 5 || schedule?.id === 8 ? 'flex items-center ' : ""}`}>
                                                                       <div className='flex justify-between'>
                                                                            <div>
                                                                                 <p className='text-base md:text-lg font-semibold text-start'>{schedule?.Method}</p>
@@ -80,13 +80,11 @@ const Schedule = () => {
 
 
                                                   </div>
-                                                  <div className={`${toggleState === schedule.id ? "block" : "hidden"} duration-300 ease-in ${toggleState=== 1 || schedule?.id === 3 || schedule?.id === 7 || schedule?.id === 9 ? "h-0 opacity-0" : "h-auto"}`}>
+                                                  <div className={`${toggleState === schedule.id ? "block" : "hidden"} duration-300 ease-in ${toggleState=== 1 || schedule?.id === 5 || schedule?.id === 8 ? "h-0 opacity-0" : "h-auto"}`}>
                                                        {
                                                             <div className={`w-full bg-gray-500/10`}>
                                                                  <div className='px-6 sm:px-12 py-8'>
-                                                                      {/* <div>
-                                                                      <img src={schedule?.images} alt="" />
-                                                                 </div> */}
+                                                                    
                                                                       <div>
                                                                            <p className='text-lg font-semibold '>{schedule?.content?.title}</p>
                                                                            <ul className='list-disc ml-3 sm:ml-6 mt-3'>
