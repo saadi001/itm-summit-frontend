@@ -13,7 +13,7 @@ const PanelistsDescription = ({ data }) => {
                          <img className='w-44' src={data.image} alt="" />
                          <h3 className="font-bold text-xl mt-2">{data.name}</h3>
                          <p className='text-sm text-slate-600'>{data.designation}</p>
-                         <div className="py-4">
+                         <div className="py-4 mt-2">
                               {
                                    data?.details?.map(detail => <p className='pb-2'>{detail.details}</p>)
                               }

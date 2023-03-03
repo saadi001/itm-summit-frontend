@@ -20,68 +20,72 @@ const Panelists = () => {
                designation: 'Director & COO at Monico Technologies Ltd, BD',
                account: 'https://www.linkedin.com/in/sakhawat-sobhan-6722a98/?originalSubdomain=bd',
                details: [
-                    {details: 'Founded an ITES for GPS Tracking for Cars, Trucks and all sorts of vehicles in Bangladesh, which is one of the top GPS Tracking company in Bangladesh under the brandname FINDER. As a part of founding FINDER GPS Tracking, He has worked on the basics of system design and control which assists in process automation for scaling a business from zero. '},
+                    { details: 'Founded an ITES for GPS Tracking for Cars, Trucks and all sorts of vehicles in Bangladesh, which is one of the top GPS Tracking company in Bangladesh under the brandname FINDER. As a part of founding FINDER GPS Tracking, He has worked on the basics of system design and control which assists in process automation for scaling a business from zero. ' },
 
-                    {details: 'He has worked on software design, system analysis, technology selection, system architecture design and implementation for strategic growth of an organization. Worked in system design and implementation for proper control in the organization, especially in marketing, operations and finance. Currently working for development and establishment of organization wide implementation of Standard Operating Procedure(SOP)s with the assistance of related software technology by internally developing through our team members.'},
+                    { details: 'He has worked on software design, system analysis, technology selection, system architecture design and implementation for strategic growth of an organization. Worked in system design and implementation for proper control in the organization, especially in marketing, operations and finance. Currently working for development and establishment of organization wide implementation of Standard Operating Procedure(SOP)s with the assistance of related software technology by internally developing through our team members.' },
 
-                    {details:'As part of my entrepreneurial aspirations starting with Finder, he has started Truck Kothay (http://truck.kothay.com), one of the first leading Truck Aggregation/ Online Truck Booking platform in Bangladesh. He could not stop there which is why also moved into e-commerce through our latest step to start Shodai (http://shod.ai or http://সদাই.com) for delivering from farm to table via the retail distribution channel.'} ,
-                    
-                    {details: 'During our endeavors, He has seen the challenges involved in managing supply chain, tasks and logistics management, which is why he has started the Conveyance App(http://conveyance.app) which turns your team’s movement properly accountable and manageable covering areas of Sales Force Management, Transport and Logistics Management, Container and Parcel Management as well as Order Management covering first mile collection to last mile delivery through an all through out automation.'},
-                    
-                    {details: 'His goals correspond to successfully implementing SOP through the use of technologies for creating a Enterprise Information System(EIS).'},
-                    
-                    {details: 'Specialties: System analysis, design, technology selection, financial report analysis, control point designing and implementing.'}
+                    { details: 'As part of my entrepreneurial aspirations starting with Finder, he has started Truck Kothay (http://truck.kothay.com), one of the first leading Truck Aggregation/ Online Truck Booking platform in Bangladesh. He could not stop there which is why also moved into e-commerce through our latest step to start Shodai (http://shod.ai or http://সদাই.com) for delivering from farm to table via the retail distribution channel.' },
+
+                    { details: 'During our endeavors, He has seen the challenges involved in managing supply chain, tasks and logistics management, which is why he has started the Conveyance App(http://conveyance.app) which turns your team’s movement properly accountable and manageable covering areas of Sales Force Management, Transport and Logistics Management, Container and Parcel Management as well as Order Management covering first mile collection to last mile delivery through an all through out automation.' },
+
+                    { details: 'His goals correspond to successfully implementing SOP through the use of technologies for creating a Enterprise Information System(EIS).' },
+
+                    { details: 'Specialties: System analysis, design, technology selection, financial report analysis, control point designing and implementing.' }
                ]
           },
-         mahbub: {
+          mahbub: {
                id: 2,
                name: 'Mahbub A. Alam',
                image: mahbub,
                designation: 'Chief Digital Officer, Bank Asia Limited',
                account: 'https://www.linkedin.com/in/mahbub-a-alam-pmp-340076113/',
                details: [
-                    {details: 'Creating and implementing an organizations overall digital strategy. Converting traditional "Analog" businesses to digital ones and responsible for the adaption of new and world standard digital technologies across the entire business.'},
+                    { details: 'Creating and implementing an organizations overall digital strategy. Converting traditional "Analog" businesses to digital ones and responsible for the adaption of new and world standard digital technologies across the entire business.' },
 
-                    {details: '25 years extensive experienced in development & management of Core Banking System.'},
-                    
+                    { details: '25 years extensive experienced in development & management of Core Banking System.' },
+
                ]
           },
           imran: {
-               id: 3, 
+               id: 3,
                name: 'Dr. Imran Mahmud',
                image: imran,
                designation: 'Associate Professor and Head at Department of Software Engineering, Daffodil International University-DIU',
-               account: '',
+               account: 'https://faculty.daffodilvarsity.edu.bd/profile/swe/imahmud.html',
                details: [
-                    {details: 'comming'}
+                    {details: 'PhD in Technology Management, Universiti Sains Malaysia, 2017'},
+                    {details: 'MSc in Software Engineering University of Hertfordshire, UK, 2009'},
+                    {details: 'BSc in Computer Science, BRAC University, Bangladesh, 2006'},
+                    {details: 'Teaching area is Software Engineering, Database Management System, Management Information System, Computer Architecture and Organization, Computer fundamentals and applications etc'},
+                    {details: 'Google scholer profile: https://scholar.google.com/citations?user=jtKiyCsAAAAJ&hl'}
                ]
           },
-          farhana:{
-               id: 4, 
+          farhana: {
+               id: 4,
                name: "Farhana Islam",
                image: farhana,
                designation: 'Specialist, Project Coordination at edotco Group',
-               account: '',
+               account: 'https://www.linkedin.com/in/farhana-islam-pmp-75b4a440/?originalSubdomain=bd',
                details: [
-                    {details: '15+ Yrs. experience in Engineering, Project Management, Sales & Marketing and Business planning in Telecom industry.'},
+                    { details: '15+ Yrs. experience in Engineering, Project Management, Sales & Marketing and Business planning in Telecom industry.' },
 
-                    {details: 'Currently working as Project Coordinator in Center of design excellence in EDOTCO Bangladesh ltd. the leading towerCo of Bangladesh.'},
+                    { details: 'Currently working as Project Coordinator in Center of design excellence in EDOTCO Bangladesh ltd. the leading towerCo of Bangladesh.' },
 
-                    {details: 'Involved in Volunteering with PMI® Bangladesh Chapter from 2020'},
+                    { details: 'Involved in Volunteering with PMI® Bangladesh Chapter from 2020' },
 
-                    {details: 'BSc in Civil (CUET), MBA in Finance (Dhaka University)'}
+                    { details: 'BSc in Civil (CUET), MBA in Finance (Dhaka University)' }
                ]
           },
-          sajjad:{
+          sajjad: {
                id: 5,
                name: 'Sazzad Ar Rahman, PMP, ITIL',
                image: sazzad,
                designation: 'Project Manager | FinTech | B Sc in EEE | MBA। Director, PMI Bangladesh Chapter',
                account: 'https://www.linkedin.com/in/sazzad-ar-rahman-pmp-itil-b16a4938/',
                details: [
-                    {details: 'A PMP certified passionate Project Manager & having 10+ years’ experience in Project Management, Data Center Operations & Facilities Management in FinTech & IT Industry. Have proven expertise in Service Development, Stakeholder Management (including Central Bank, Ministry, Banks, MFS, PSP, etc.), Risk Management, Project & People Management, Policy Enforcement, Communication, Coordination & Strategic Planning & Development area.'},
-                    {details: 'A Growth Centric leader, with a variable record of successful business development through rich capability in project Management & experienced in managing complex business by developing relationships, convincing & executing strategic business development plan to achieve the final target.'},
-                    {details: ' Passionate about directing a new strategy, Project analysis, critical situation handling, Vendor Management, Scheduling, Reporting & Documentation, Data Analysis, demand forecasting, product penetration strategy in a competitive environment'}
+                    { details: 'A PMP certified passionate Project Manager & having 10+ years’ experience in Project Management, Data Center Operations & Facilities Management in FinTech & IT Industry. Have proven expertise in Service Development, Stakeholder Management (including Central Bank, Ministry, Banks, MFS, PSP, etc.), Risk Management, Project & People Management, Policy Enforcement, Communication, Coordination & Strategic Planning & Development area.' },
+                    { details: 'A Growth Centric leader, with a variable record of successful business development through rich capability in project Management & experienced in managing complex business by developing relationships, convincing & executing strategic business development plan to achieve the final target.' },
+                    { details: ' Passionate about directing a new strategy, Project analysis, critical situation handling, Vendor Management, Scheduling, Reporting & Documentation, Data Analysis, demand forecasting, product penetration strategy in a competitive environment' }
                ]
           },
           nusrat: {
@@ -89,9 +93,12 @@ const Panelists = () => {
                name: 'Nusrat Jahan',
                image: nusrat,
                designation: 'Assistant Professor & Head, Department of ITM, DIU',
-               account: '',
+               account: 'https://faculty.daffodilvarsity.edu.bd/profile/swe/nusrat-jahan.html',
                details: [
-                    {details: ''}
+                    { details: 'Workshop On Structural Equation Modelling Basics Using Smartpls Software For Management Research; 21 October 2017, Daffodil International University'},
+                    {details: 'Software Testing And Quality Assurance Training'},
+                    {details: 'CCNA 1(Network Fundamentals) ,CCNA 2(Routing protocols and concepts'},
+                    {details: 'Google scholar profile link: https://scholar.google.com/citations?hl=en&user=ITOb_GsAAAAJ'}
                ]
           }
 
@@ -139,7 +146,7 @@ const Panelists = () => {
                                         </div>
                                    </div>
                                    <div class="h-1/2">
-                                        <p class="text-white pb-4 opacity-0 transition duration-300 group-hover:opacity-100">{panelistData.mahbub.designation}</p>                                        
+                                        <p class="text-white pb-4 opacity-0 transition duration-300 group-hover:opacity-100">{panelistData.mahbub.designation}</p>
                                         <label onClick={() => setDescription(panelistData.mahbub)} htmlFor="my-modal-5" className="bg-white text-black text-sm px-3 py-1 font-semibold opacity-0 transition duration-300 group-hover:opacity-100 border-2 border-white focus:border-black focus:bg-gray-300 cursor-pointer capitalize">read more</label>
                                    </div>
                               </div>
@@ -158,7 +165,7 @@ const Panelists = () => {
                                         </div>
                                    </div>
                                    <div class="h-1/2">
-                                        <p class="text-white pb-4 opacity-0 transition duration-300 group-hover:opacity-100">Associate Professor and Head at Department of Software Engineering, Daffodil International University-DIU</p>                                        
+                                        <p class="text-white pb-4 opacity-0 transition duration-300 group-hover:opacity-100">Associate Professor and Head at Department of Software Engineering, Daffodil International University-DIU</p>
                                         <label onClick={() => setDescription(panelistData.imran)} htmlFor="my-modal-5" className="bg-white text-black text-sm px-3 py-1 font-semibold opacity-0 transition duration-300 group-hover:opacity-100 border-2 border-white focus:border-black focus:bg-gray-300 cursor-pointer capitalize">read more</label>
                                    </div>
                               </div>
@@ -190,7 +197,7 @@ const Panelists = () => {
                     </div>
                     {/* saazzad sir  */}
                     <div class="h-72 col-span-2 md:h-96  lg:mb-0 mt-7">
-                         <div  class="h-72 md:h-96 block group relative overflow-hidden shadow-lg">
+                         <div class="h-72 md:h-96 block group relative overflow-hidden shadow-lg">
                               <img src={sazzad} class="absolute z-0 object-cover w-full h-72 md:h-96" alt='' />
                               <div class="absolute gradient transition duration-300 group-hover:bg-black group-hover:opacity-90 w-full h-72 md:h-96 z-0"></div>
                               <div className='absolute top-1 left-2 font-medium z-10 text-white text-base'>Panelist</div>
@@ -236,8 +243,8 @@ const Panelists = () => {
                <div>
                     {
                          description && <PanelistsDescription
-                         data={description}
-                         closeModal={closeModal}
+                              data={description}
+                              closeModal={closeModal}
                          ></PanelistsDescription>
                     }
                </div>
