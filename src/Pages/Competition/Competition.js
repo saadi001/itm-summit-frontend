@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import Header from '../../Components/Header/Header';
 import Loading from '../Loading/Loading';
 import { MdReportGmailerrorred } from "react-icons/md";
+import { toast } from 'react-hot-toast';
 
 const Competition = () => {
      const navigate = useNavigate();
@@ -22,49 +23,54 @@ const Competition = () => {
           setSelectedValue(event.target.value);
      }
 
+      const registrationOff = () =>{
+          toast.error('Registration closed!')
+     }
+
      const handleRegisterForm = (data) => {
           // console.log(selectedValue, data)
-          setLoading(true)
-          const { name, department, id, email, semester, phone, transactionID } = data;
+          registrationOff();
+          // setLoading(true)
+          // const { name, department, id, email, semester, phone, transactionID } = data;
 
-          // image upload 
-          const image = data.image[0]
-          const formData = new FormData();
-          formData.append('image', image)
-          const url = `https://api.imgbb.com/1/upload?key=63767107697823bd4d26d5b8bb78e4a0`
-          fetch(url, {
-               method: 'POST',
-               body: formData
-          })
-               .then(res => res.json())
-               .then(imageData => {
-                    if (imageData.success) {
-                         console.log(imageData.data.url)
-                         const registerData = {
-                              name,
-                              department,
-                              id,
-                              email,
-                              semester,
-                              phone,
-                              taka: selectedValue,
-                              image: imageData.data.url,
-                              transactionID
-                         }
-                         fetch('https://itmsummitbackend.vercel.app/competition', {
-                              method: "POST",
-                              headers: {
-                                   'content-type': 'application/json'
-                              },
-                              body: JSON.stringify(registerData)
-                         })
-                              .then(res => res.json())
-                              .then(() => {
-                                   setLoading(false)
-                                   navigate('/')
-                              })
-                    }
-               })
+          // // image upload 
+          // const image = data.image[0]
+          // const formData = new FormData();
+          // formData.append('image', image)
+          // const url = `https://api.imgbb.com/1/upload?key=63767107697823bd4d26d5b8bb78e4a0`
+          // fetch(url, {
+          //      method: 'POST',
+          //      body: formData
+          // })
+          //      .then(res => res.json())
+          //      .then(imageData => {
+          //           if (imageData.success) {
+          //                console.log(imageData.data.url)
+          //                const registerData = {
+          //                     name,
+          //                     department,
+          //                     id,
+          //                     email,
+          //                     semester,
+          //                     phone,
+          //                     taka: selectedValue,
+          //                     image: imageData.data.url,
+          //                     transactionID
+          //                }
+          //                fetch('https://itmsummitbackend.vercel.app/competition', {
+          //                     method: "POST",
+          //                     headers: {
+          //                          'content-type': 'application/json'
+          //                     },
+          //                     body: JSON.stringify(registerData)
+          //                })
+          //                     .then(res => res.json())
+          //                     .then(() => {
+          //                          setLoading(false)
+          //                          navigate('/')
+          //                     })
+          //           }
+          //      })
 
 
      }

@@ -15,16 +15,18 @@ const RegisrtrationList = () => {
      })
 
      const handleCollected = (id) => {
-          fetch(`http://localhost:5000/collected/${id}`, {
+          console.log(id)
+          fetch(`https://itmsummitbackend.vercel.app/souvenirCollected/${id}`,{
                method: 'PUT'
           })
-               .then(res => res.json())
-               .then(data => {
-                    if (data.modifiedCount > 0) {
-                         refetch()
-                         toast.success('collected successfully.')
-                    }
-               })
+          .then(res => res.json())
+          .then(data => {
+               if(data.modifiedCount > 0){
+                    refetch()
+                    toast.success('collected successfully!')
+               }
+          })
+          
 
      }
 
@@ -49,7 +51,7 @@ const RegisrtrationList = () => {
                               
                          </div>
                          <div className='flex justify-end items-center gap-3'>
-                                   <div className='text-sm'><span >Souvenir collection: </span><button onClick={() => handleCollected(register._id)} className='bg-pink-600 px-3 py-1 text-white rounded-md'>Remaining</button></div>
+                                   <div className='text-sm'><span >Souvenir collection: </span><button  className='bg-pink-600 px-3 py-1 text-white rounded-md'>Remaining</button></div>
                                    <div className='text-sm'><span >Email sending: </span><button  className='bg-pink-600 px-3 py-1 text-white rounded-md'>Remaining</button></div>
                               </div>
 
